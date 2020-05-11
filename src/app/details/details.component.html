@@ -2,12 +2,18 @@
 <div class="card mb-3 card-details--pokemon">
     <div class="row no-gutters">
       <div class="col-md-4">
-        <img src={{detailsPokemon?.imageUrlHiRes}} class="card-img" alt="...">
+        <img *ngIf="loading == false" src={{detailsPokemon?.imageUrlHiRes}} class="card-img" alt="...">
+        <div class="spinner-grow text-dark container loading" role="status" *ngIf="loading == true">
+          <span class="sr-only">Loading...</span>
+        </div>
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title">{{detailsPokemon?.name}} / {{detailsPokemon?.supertype}} - {{detailsPokemon?.subtype}} <sup>{{detailsPokemon?.id}}</sup></h5>
-          <table class="table table-bordered" *ngIf="detailsPokemon?.attacks !== undefined">
+          <h5 class="card-title" *ngIf="loading == false">{{detailsPokemon?.name}} / {{detailsPokemon?.supertype}} - {{detailsPokemon?.subtype}} <sup>{{detailsPokemon?.id}}</sup></h5>
+          <div class="spinner-grow text-dark container loading" role="status" *ngIf="loading == true">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <table class="table table-bordered" *ngIf="detailsPokemon?.attacks !== undefined && loading == false">
             <thead>
              <tr>
                  <th colspan="4">Ataques</th>
@@ -29,7 +35,10 @@
             </tbody>
           </table>
           <br>
-          <table class="table table-bordered" *ngIf="detailsPokemon?.resistances !== undefined">
+          <div class="spinner-grow text-dark container loading" role="status" *ngIf="loading == true">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <table class="table table-bordered" *ngIf="detailsPokemon?.resistances !== undefined && loading == false">
             <thead>
              <tr>
                  <th colspan="2">Resistencia(s)</th>
@@ -47,7 +56,10 @@
             </tbody>
           </table>
           <br>
-          <table class="table table-bordered" *ngIf="detailsPokemon?.weaknesses !== undefined">
+          <div class="spinner-grow text-dark container loading" role="status" *ngIf="loading == true">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <table class="table table-bordered" *ngIf="detailsPokemon?.weaknesses !== undefined && loading == false">
             <thead>
              <tr>
                  <th colspan="2">Fraquesa(s)</th>

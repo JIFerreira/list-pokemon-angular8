@@ -5,6 +5,10 @@ export interface card {
 interface cardType {
     id: string,
     name: string,
-    imageUrl: string,
-    types: Array<any>
+    imageUrlHiRes: string,
+    supertype: string,
+    subtype: string,
+    attacks: Array<any>,
+    resistances: Array<any>,
+    weaknesses: Array<any>,
 }

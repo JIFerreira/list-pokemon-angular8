@@ -1,9 +1,4 @@
 
-/* 
-main.container {
-    margin-top: 10%;
-} */
-
 .loading {
     position: relative;
     left: 50%;
@@ -84,4 +79,8 @@ main.container {
 
 .pagination {
     margin-top: 5%;
+}
+
+.btn-warning{
+    color: #fff;
 }

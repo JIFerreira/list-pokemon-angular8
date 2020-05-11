@@ -101,7 +101,6 @@ export class HomeComponent implements OnInit {
         return a.name.localeCompare(b.name);
       });
       this.loading = false
-      console.log('verificando o retorno da pesquisa', this.allPokemons)
     },
     (error) => {
       console.log('houve um problema', error);
@@ -118,7 +117,6 @@ export class HomeComponent implements OnInit {
         return a.name.localeCompare(b.name);
       });
       this.loading = false
-      console.log('verificando o retorno da pagina', this.allPokemons)
     },
     (error) => {
       console.log('houve um problema', error);
@@ -136,8 +134,6 @@ export class HomeComponent implements OnInit {
         return a.name.localeCompare(b.name);
       });
       this.loading = false
-      console.log('vericando currentPage', this.currentPage)
-      console.log('verificando o retorno da pagina', this.allPokemons)
     },
     (error) => {
       console.log('houve um problema', error);
@@ -154,7 +150,7 @@ export class HomeComponent implements OnInit {
         return a.name.localeCompare(b.name);
       });
       this.loading = false
-      console.log('verificando o retorno da pagina', this.allPokemons)
+
     },
     (error) => {
       console.log('houve um problema', error);

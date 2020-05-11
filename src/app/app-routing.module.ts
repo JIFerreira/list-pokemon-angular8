@@ -6,9 +6,11 @@ import { DetailsComponent } from './details/details.component';
 import { PokemonNotFoundComponent } from './pokemon-not-found/pokemon-not-found.component';
 
 const routes: Routes = [
-  {path: 'not-found/', component: PokemonNotFoundComponent},
+  {path: '', component: HomeComponent},
   {path: 'details/:id', component: DetailsComponent},
-  {path: '', component: HomeComponent}
+  {path: 'not-found/', component: PokemonNotFoundComponent},
+  { path: '**',   redirectTo: 'not-found/', pathMatch: 'full' }
+  
 ];
 
 @NgModule({
