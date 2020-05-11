@@ -4,4 +4,4 @@ Projetinho desenvolvido para análise de uma oportunidade na brasilprev utilizan
 
 ## Development server
 
-Execute `ng serve` para levantar a aplicação. Navegue para a o seguinte endereço `http://localhost:4200/` para poder testar a aplicação em seu navegador!
+Execute `ng serve` para levantar a aplicação. Navegue para o seguinte endereço `http://localhost:4200/` para poder testar a aplicação em seu navegador!
