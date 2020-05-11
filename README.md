@@ -1,7 +1,7 @@
 # Brasilprev
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
+Projetinho desenvolvido para análise de uma oportunidade na brasilprev utilizando Angular 8.3.20.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Execute `ng serve` para levantar a aplicação. Navegue para a o seguinte endereço `http://localhost:4200/` para poder testar a aplicação em seu navegador!
